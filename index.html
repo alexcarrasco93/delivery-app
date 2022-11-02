@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,10 @@
     <title>App Delivery</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/build/css/app.css">
 </head>
+
 <body>
     <header class="header container">
         <div class="header__logo">
@@ -22,5 +24,527 @@
             <a href="#" class="navbar__link navbar__link--register">Register Restaurant</a>
         </div>
     </header>
+
+    <section class="container form">
+        <div class="form__grid">
+            <div class="form__content">
+                <form class="form__search">
+                    <h2 class="form__heading">Search and Find food of your favorite restaurant</h2>
+                    <div class="form__field">
+                        <label for="restaurant" class="form__label">Restaurant</label>
+                        <input type="text" id="restaurant" class="form__input" placeholder="Ciutat Comtal">
+                    </div>
+                    <div class="form__field">
+                        <label for="food" class="form__label">Food</label>
+                        <input type="text" id="food" class="form__input" placeholder="Iberian Ham, Bravas, Frankfurt">
+                    </div>
+
+                    <input type="submit" class="form__submit" value="Search">
+                </form>
+            </div>
+            <div class="form__img-container">
+                <img class="form__img" src="build/img/dibujo_repartidor.svg" alt="delivery guy">
+            </div>
+        </div>
+    </section>
+
+    <section class="steps">
+        <img src="build/img/wave.svg" alt="wave image" class="steps__wave">
+
+        <div class="steps__content">
+            <h2 class="steps__heading">How does it work? <span class="steps__heading--description">As easy as 1, 2 and
+                    3</span></h2>
+            <div class="steps__grid container">
+                <div class="steps__step">
+                    <picture>
+                        <source srcset="build/img/paso_1.avif" type="image/avif">
+                        <source srcset="build/img/paso_1.webp" type="image/webp">
+                        <img class="steps__img" loading="lazy" src="build/img/paso_1.png" alt="step image">
+                    </picture>
+                </div>
+                <div class="steps__step">
+                    <picture>
+                        <source srcset="build/img/paso_2.avif" type="image/avif">
+                        <source srcset="build/img/paso_2.webp" type="image/webp">
+                        <img class="steps__img" loading="lazy" src="build/img/paso_2.png" alt="step image">
+                    </picture>
+                </div>
+                <div class="steps__step">
+                    <picture>
+                        <source srcset="build/img/paso_3.avif" type="image/avif">
+                        <source srcset="build/img/paso_3.webp" type="image/webp">
+                        <img class="steps__img" loading="lazy" src="build/img/paso_3.png" alt="step image">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container testimonials">
+        <h2 class="testimonials__heading">Testimonials</h2>
+
+        <div class="testimonials__grid">
+            <div class="testimonial">
+                <header class="testimonial__header">
+                    <div class="testimonial__img">
+                        <picture>
+                            <source srcset="build/img/testimonial1.avif" type="image/avif">
+                            <source srcset="build/img/testimonial1.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/testimonial1.jpg" alt="testimonial">
+                        </picture>
+                    </div>
+                    <div class="testimonial_info">
+                        <p class="testimonial__autor">Alex Carrasco Salvador</p>
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img class="testimonial__rating" loading="lazy" src="build/img/estrellas.png"
+                                alt="stars image">
+                        </picture>
+                    </div>
+                </header>
+
+                <blockquote class="testimonial__txt">
+                    An excellent app, I can select from a large number of options and pay by card or cash at my
+                    convenience.
+                </blockquote>
+            </div> <!-- testimonial -->
+            <div class="testimonial">
+                <header class="testimonial__header">
+                    <div class="testimonial__img">
+                        <picture>
+                            <source srcset="build/img/testimonial5.avif" type="image/avif">
+                            <source srcset="build/img/testimonial5.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/testimonial5.jpg" alt="testimonial">
+                        </picture>
+                    </div>
+                    <div class="testimonial_info">
+                        <p class="testimonial__autor">Joseph Zandueta Villanueva</p>
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img class="testimonial__rating" loading="lazy" src="build/img/estrellas.png"
+                                alt="stars image">
+                        </picture>
+                    </div>
+                </header>
+
+                <blockquote class="testimonial__txt">
+                    An excellent app, I can select from a large number.
+                </blockquote>
+            </div> <!-- testimonial -->
+            <div class="testimonial">
+                <header class="testimonial__header">
+                    <div class="testimonial__img">
+                        <picture>
+                            <source srcset="build/img/testimonial4.avif" type="image/avif">
+                            <source srcset="build/img/testimonial4.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/testimonial4.jpg" alt="testimonial">
+                        </picture>
+                    </div>
+                    <div class="testimonial_info">
+                        <p class="testimonial__autor">Arantxa Carrasco Salvador</p>
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img class="testimonial__rating" loading="lazy" src="build/img/estrellas.png"
+                                alt="stars image">
+                        </picture>
+                    </div>
+                </header>
+
+                <blockquote class="testimonial__txt">
+                    An excellent app, I can select from a large number of options and pay by card or cash at my
+                    convenience. cash at my convenience.
+                </blockquote>
+            </div> <!-- testimonial -->
+            <div class="testimonial">
+                <header class="testimonial__header">
+                    <div class="testimonial__img">
+                        <picture>
+                            <source srcset="build/img/testimonial2.avif" type="image/avif">
+                            <source srcset="build/img/testimonial2.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/testimonial2.jpg" alt="testimonial">
+                        </picture>
+                    </div>
+                    <div class="testimonial_info">
+                        <p class="testimonial__autor">María Saíz Jimenez</p>
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img class="testimonial__rating" loading="lazy" src="build/img/estrellas.png"
+                                alt="stars image">
+                        </picture>
+                    </div>
+                </header>
+
+                <blockquote class="testimonial__txt">
+                    An excellent app, I can select from a large number of options and pay by card or cash at my
+                    convenience.
+                </blockquote>
+            </div> <!-- testimonial -->
+            <div class="testimonial">
+                <header class="testimonial__header">
+                    <div class="testimonial__img">
+                        <picture>
+                            <source srcset="build/img/testimonial3.avif" type="image/avif">
+                            <source srcset="build/img/testimonial3.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/testimonial3.jpg" alt="testimonial">
+                        </picture>
+                    </div>
+                    <div class="testimonial_info">
+                        <p class="testimonial__autor">Clara Corominas Ruhdrup</p>
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img class="testimonial__rating" loading="lazy" src="build/img/estrellas.png"
+                                alt="stars image">
+                        </picture>
+                    </div>
+                </header>
+
+                <blockquote class="testimonial__txt">
+                    An excellent app, I can select from a large number of options and pay by card or cash at my
+                    convenience.
+                </blockquote>
+            </div> <!-- testimonial -->
+        </div>
+    </section>
+
+    <main class="favorites">
+        <h2 class="favorites__heading">Favorite Restaurants</h2>
+
+        <div class="favorites__grid container">
+            <div class="favorite">
+                <div class="favorite__grid">
+                    <div class="favorite__img">
+                        <picture>
+                            <source srcset="build/img/logo_ensaladas.avif" type="image/avif">
+                            <source srcset="build/img/logo_ensaladas.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/logo_ensaladas.png" alt="restaurant logo">
+                        </picture>
+                    </div>
+
+                    <div class="favorite__content">
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img class="favorite__rating" loading="lazy" src="build/img/estrellas.png"
+                                alt="restaurant rating">
+                        </picture>
+
+                        <h3 class="favorite__name">Green Salads</h3>
+                        <p class="favorite__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Consequuntur est provident quibusdam sed voluptatum eaque dicta ipsum. Magni, rerum quas
+                            voluptas fuga perferendis, vero provident labore reprehenderit, earum debitis cumque.</p>
+                    </div>
+                </div>
+            </div> <!-- favorite -->
+            <div class="favorite">
+                <div class="favorite__grid">
+                    <div class="favorite__img">
+                        <picture>
+                            <source srcset="build/img/logo_ensaladas.avif" type="image/avif">
+                            <source srcset="build/img/logo_ensaladas.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/logo_ensaladas.png" alt="restaurant logo">
+                        </picture>
+                    </div>
+
+                    <div class="favorite__content">
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img class="favorite__rating" loading="lazy" src="build/img/estrellas.png"
+                                alt="restaurant rating">
+                        </picture>
+
+                        <h3 class="favorite__name">Green Salads</h3>
+                        <p class="favorite__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Consequuntur est provident quibusdam sed voluptatum eaque dicta ipsum. Magni, rerum quas
+                            voluptas fuga perferendis, vero provident labore reprehenderit, earum debitis cumque.</p>
+                    </div>
+                </div>
+            </div> <!-- favorite -->
+            <div class="favorite">
+                <div class="favorite__grid">
+                    <div class="favorite__img">
+                        <picture>
+                            <source srcset="build/img/logo_ensaladas.avif" type="image/avif">
+                            <source srcset="build/img/logo_ensaladas.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/logo_ensaladas.png" alt="restaurant logo">
+                        </picture>
+                    </div>
+
+                    <div class="favorite__content">
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img class="favorite__rating" loading="lazy" src="build/img/estrellas.png"
+                                alt="restaurant rating">
+                        </picture>
+
+                        <h3 class="favorite__name">Green Salads</h3>
+                        <p class="favorite__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Consequuntur est provident quibusdam sed voluptatum eaque dicta ipsum. Magni, rerum quas
+                            voluptas fuga perferendis, vero provident labore reprehenderit, earum debitis cumque.</p>
+                    </div>
+                </div>
+            </div> <!-- favorite -->
+            <div class="favorite">
+                <div class="favorite__grid">
+                    <div class="favorite__img">
+                        <picture>
+                            <source srcset="build/img/logo_ensaladas.avif" type="image/avif">
+                            <source srcset="build/img/logo_ensaladas.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/logo_ensaladas.png" alt="restaurant logo">
+                        </picture>
+                    </div>
+
+                    <div class="favorite__content">
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img class="favorite__rating" loading="lazy" src="build/img/estrellas.png"
+                                alt="restaurant rating">
+                        </picture>
+
+                        <h3 class="favorite__name">Green Salads</h3>
+                        <p class="favorite__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Consequuntur est provident quibusdam sed voluptatum eaque dicta ipsum. Magni, rerum quas
+                            voluptas fuga perferendis, vero provident labore reprehenderit, earum debitis cumque.</p>
+                    </div>
+                </div>
+            </div> <!-- favorite -->
+            <div class="favorite">
+                <div class="favorite__grid">
+                    <div class="favorite__img">
+                        <picture>
+                            <source srcset="build/img/logo_ensaladas.avif" type="image/avif">
+                            <source srcset="build/img/logo_ensaladas.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/logo_ensaladas.png" alt="restaurant logo">
+                        </picture>
+                    </div>
+
+                    <div class="favorite__content">
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img class="favorite__rating" loading="lazy" src="build/img/estrellas.png"
+                                alt="restaurant rating">
+                        </picture>
+
+                        <h3 class="favorite__name">Green Salads</h3>
+                        <p class="favorite__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Consequuntur est provident quibusdam sed voluptatum eaque dicta ipsum. Magni, rerum quas
+                            voluptas fuga perferendis, vero provident labore reprehenderit, earum debitis cumque.</p>
+                    </div>
+                </div>
+            </div> <!-- favorite -->
+            <div class="favorite">
+                <div class="favorite__grid">
+                    <div class="favorite__img">
+                        <picture>
+                            <source srcset="build/img/logo_ensaladas.avif" type="image/avif">
+                            <source srcset="build/img/logo_ensaladas.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/logo_ensaladas.png" alt="restaurant logo">
+                        </picture>
+                    </div>
+
+                    <div class="favorite__content">
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img class="favorite__rating" loading="lazy" src="build/img/estrellas.png"
+                                alt="restaurant rating">
+                        </picture>
+
+                        <h3 class="favorite__name">Green Salads</h3>
+                        <p class="favorite__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Consequuntur est provident quibusdam sed voluptatum eaque dicta ipsum. Magni, rerum quas
+                            voluptas fuga perferendis, vero provident labore reprehenderit, earum debitis cumque.</p>
+                    </div>
+                </div>
+            </div> <!-- favorite -->
+            <div class="favorite">
+                <div class="favorite__grid">
+                    <div class="favorite__img">
+                        <picture>
+                            <source srcset="build/img/logo_ensaladas.avif" type="image/avif">
+                            <source srcset="build/img/logo_ensaladas.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/logo_ensaladas.png" alt="restaurant logo">
+                        </picture>
+                    </div>
+
+                    <div class="favorite__content">
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img class="favorite__rating" loading="lazy" src="build/img/estrellas.png"
+                                alt="restaurant rating">
+                        </picture>
+
+                        <h3 class="favorite__name">Green Salads</h3>
+                        <p class="favorite__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Consequuntur est provident quibusdam sed voluptatum eaque dicta ipsum. Magni, rerum quas
+                            voluptas fuga perferendis, vero provident labore reprehenderit, earum debitis cumque.</p>
+                    </div>
+                </div>
+            </div> <!-- favorite -->
+            <div class="favorite">
+                <div class="favorite__grid">
+                    <div class="favorite__img">
+                        <picture>
+                            <source srcset="build/img/logo_ensaladas.avif" type="image/avif">
+                            <source srcset="build/img/logo_ensaladas.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/logo_ensaladas.png" alt="restaurant logo">
+                        </picture>
+                    </div>
+
+                    <div class="favorite__content">
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img class="favorite__rating" loading="lazy" src="build/img/estrellas.png"
+                                alt="restaurant rating">
+                        </picture>
+
+                        <h3 class="favorite__name">Green Salads</h3>
+                        <p class="favorite__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Consequuntur est provident quibusdam sed voluptatum eaque dicta ipsum. Magni, rerum quas
+                            voluptas fuga perferendis, vero provident labore reprehenderit, earum debitis cumque.</p>
+                    </div>
+                </div>
+            </div> <!-- favorite -->
+            <div class="favorite">
+                <div class="favorite__grid">
+                    <div class="favorite__img">
+                        <picture>
+                            <source srcset="build/img/logo_ensaladas.avif" type="image/avif">
+                            <source srcset="build/img/logo_ensaladas.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/logo_ensaladas.png" alt="restaurant logo">
+                        </picture>
+                    </div>
+
+                    <div class="favorite__content">
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img class="favorite__rating" loading="lazy" src="build/img/estrellas.png"
+                                alt="restaurant rating">
+                        </picture>
+
+                        <h3 class="favorite__name">Green Salads</h3>
+                        <p class="favorite__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Consequuntur est provident quibusdam sed voluptatum eaque dicta ipsum. Magni, rerum quas
+                            voluptas fuga perferendis, vero provident labore reprehenderit, earum debitis cumque.</p>
+                    </div>
+                </div>
+            </div> <!-- favorite -->
+            <div class="favorite">
+                <div class="favorite__grid">
+                    <div class="favorite__img">
+                        <picture>
+                            <source srcset="build/img/logo_ensaladas.avif" type="image/avif">
+                            <source srcset="build/img/logo_ensaladas.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/logo_ensaladas.png" alt="restaurant logo">
+                        </picture>
+                    </div>
+
+                    <div class="favorite__content">
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img class="favorite__rating" loading="lazy" src="build/img/estrellas.png"
+                                alt="restaurant rating">
+                        </picture>
+
+                        <h3 class="favorite__name">Green Salads</h3>
+                        <p class="favorite__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Consequuntur est provident quibusdam sed voluptatum eaque dicta ipsum. Magni, rerum quas
+                            voluptas fuga perferendis, vero provident labore reprehenderit, earum debitis cumque.</p>
+                    </div>
+                </div>
+            </div> <!-- favorite -->
+        </div>
+    </main>
+
+    <section class="deliverers">
+        <h2 class="deliverers__heading">Earn money with AppFood</h2>
+        <div class="deliverers__grid container">
+            <div class="deliverers__img">
+                <picture>
+                    <source srcset="build/img/repartidor.avif" type="image/avif">
+                    <source srcset="build/img/repartidor.webp" type="image/webp">
+                    <img loading="lazy" src="build/img/repartidor.jpg" alt="deliverers image">
+                </picture>
+            </div>
+            <div class="deliverers__content">
+                <p class="deliverers__txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta sapiente
+                    possimus ut esse quam velit vel laudantium error quidem sit! Molestias incidunt deleniti minima
+                    culpa consequuntur dolore quibusdam rerum ut?</p>
+                <p class="deliverers__txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta sapiente
+                    possimus ut esse quam velit vel laudantium error quidem sit! Molestias incidunt deleniti minima
+                    culpa consequuntur dolore quibusdam rerum ut?</p>
+                <a href="#" class="deliverers__link">More information</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="download">
+        <div class="download__grid container">
+            <div class="download__img">
+                <picture>
+                    <source srcset="build/img/app.avif" type="image/avif">
+                    <source srcset="build/img/app.webp" type="image/webp">
+                    <img loading="lazy" src="build/img/app.png" alt="app image">
+                </picture>
+            </div>
+
+            <div class="stores">
+                <h3 class="stores__heading">Download the App</h3>
+                <p class="stores__txt">Available for Android and iOS</p>
+
+                <div class="stores__grid">
+                    <a href="#" class="stores__link">
+                        <img src="build/img/tienda-apple.svg" alt="Apple Store">
+                    </a>
+                    <a href="#" class="stores__link">
+                        <img src="build/img/tienda-android.svg" alt="Android Store">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__grid container">
+            <div class="footer__box">
+                <h3 class="footer__heading">About Us</h3>
+                <p class="footer__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, aperiam!
+                    Deserunt omnis voluptatibus doloremque dolores sequi blanditiis, facilis quam odio officia aperiam
+                    magnam, vero doloribus maiores, aut fugiat suscipit ipsam.</p>
+            </div>
+            <div class="footer__box">
+                <h3 class="footer__heading">Navigation</h3>
+                <nav class="footer__navbar">
+                    <a href="#" class="footer__link">Link 1</a>
+                    <a href="#" class="footer__link">Link 2</a>
+                    <a href="#" class="footer__link">Link 3</a>
+                    <a href="#" class="footer__link">Link 4</a>
+                    <a href="#" class="footer__link">Link 5</a>
+                    <a href="#" class="footer__link">Link 6</a>       
+                </nav>
+            </div>
+            <div class="footer__box">
+                <h3 class="footer__heading">Contact</h3>
+                <p class="footer__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, aperiam!
+                    Deserunt omnis voluptatibus doloremque dolores sequi blanditiis, facilis quam odio officia aperiam
+                    magnam, vero doloribus maiores, aut fugiat suscipit ipsam.</p>
+            </div>
+        </div>
+
+        <p class="footer__copyright">Delivery App. All rights reserved</p>
+    </footer>
 </body>
+
 </html>
